@@ -354,7 +354,7 @@ h1 {
       font-size: 3em;
       padding: 0;
       text-align: left;
-      width: 500px; } }
+      width: 400px; } }
 
 .home__description {
   color: #937b92;
@@ -379,7 +379,8 @@ h1 {
     color: #ee68a4;
     font-weight: 400; }
   .card__review {
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 1.5; }
 
 /**
  * Clear inner floats
