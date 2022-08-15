@@ -1,0 +1,104 @@
+html {
+  background-image: url("/dist/images/bg-pattern-top-mobile.svg"),
+    url("/dist/images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, repeat;
+  position: relative;
+
+  @media (min-width: map-get($breakpoints , "medium")) {
+    background-image: url("/dist/images/bg-pattern-top-desktop.svg"),
+      url("/dist/images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40%, 50%;
+  }
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+  @media (min-width: map-get($breakpoints , "medium")) {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.hero {
+  @media (min-width: map-get($breakpoints , "medium")) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    align-items: center;
+  }
+}
+.ratings {
+  @media (min-width: map-get($breakpoints , "medium")) {
+    display: grid;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    &--first {
+      @media (min-width: map-get($breakpoints , "medium")) {
+        justify-self: start;
+      }
+    }
+    &--second {
+      @media (min-width: map-get($breakpoints , "medium")) {
+        justify-self: center;
+      }
+    }
+    &--third {
+      @media (min-width: map-get($breakpoints , "medium")) {
+        justify-self: end;
+      }
+    }
+  }
+  &__stars {
+    justify-self: center;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  height: 200px;
+}
+
+.card--first {
+  @media (min-width: map-get($breakpoints , "medium")) {
+    align-self: start;
+  }
+}
+.card--second {
+  @media (min-width: map-get($breakpoints , "medium")) {
+    align-self: center;
+  }
+}
+.card--third {
+  @media (min-width: map-get($breakpoints , "medium")) {
+    align-self: end;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 11px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  display: none;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media (min-width: map-get($breakpoints , "medium")) {
+    display: block;
+  }
+}

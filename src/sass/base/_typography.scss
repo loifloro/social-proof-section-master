@@ -1,0 +1,60 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $very-dark-magenta;
+  font: normal 16px $default;
+}
+
+span {
+  margin: 2px 0 ;
+}
+
+h1 {
+  color: $very-dark-magenta;
+  text-align: center;
+  padding: 0 1rem;
+
+  @media (min-width: map-get($breakpoints , 'medium')) {
+    font-size: 3em;
+    padding: 0;
+    text-align: left;
+    width: 500px;
+  }
+}
+
+.home__description {
+  color: $dark-gray-magenta;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5;
+
+  @media (min-width: map-get($breakpoints , 'medium')) {
+    text-align: left;
+    width: 400px;
+  }
+}
+
+/* Components */
+
+.ratings {
+  font-weight: 700;
+  text-align: center;
+}
+
+.card {
+  color: $white;
+  
+  &__name {
+    font-weight: 700;
+  }
+
+  &__role {
+    color: $soft-pink;
+    font-weight: 400;
+  }
+
+  &__review {
+    font-weight: 400;
+  }
+}
