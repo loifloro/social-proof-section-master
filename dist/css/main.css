@@ -437,10 +437,9 @@ h1 {
   width: 1px; }
 
 html {
-  background-image: url("/dist/images/bg-pattern-top-mobile.svg"), url("/dist/images/bg-pattern-bottom-mobile.svg");
+  background-image: url("./dist/images/bg-pattern-top-mobile.svg"), url("/dist/images/bg-pattern-bottom-mobile.svg");
   background-position: top left, bottom right;
-  background-repeat: no-repeat, repeat;
-  position: relative; }
+  background-repeat: no-repeat, repeat; }
   @media (min-width: 768px) {
     html {
       background-image: url("/dist/images/bg-pattern-top-desktop.svg"), url("/dist/images/bg-pattern-bottom-desktop.svg");
@@ -451,12 +450,11 @@ html {
 body {
   position: relative;
   min-height: 100vh; }
-
-@media (min-width: 768px) {
-  main {
-    display: grid;
-    justify-content: center;
-    align-content: center; } }
+  @media (min-width: 768px) {
+    body {
+      display: grid;
+      justify-content: center;
+      align-content: center; } }
 
 @media (min-width: 768px) {
   .hero {

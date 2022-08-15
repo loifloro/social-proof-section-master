@@ -1,9 +1,8 @@
 html {
-  background-image: url("/dist/images/bg-pattern-top-mobile.svg"),
+  background-image: url("./dist/images/bg-pattern-top-mobile.svg"),
     url("/dist/images/bg-pattern-bottom-mobile.svg");
   background-position: top left, bottom right;
   background-repeat: no-repeat, repeat;
-  position: relative;
 
   @media (min-width: map-get($breakpoints , "medium")) {
     background-image: url("/dist/images/bg-pattern-top-desktop.svg"),
@@ -17,15 +16,14 @@ html {
 body {
     position: relative;
     min-height: 100vh;
+
+    @media (min-width: map-get($breakpoints , "medium")) {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+      }
 }
 
-main {
-  @media (min-width: map-get($breakpoints , "medium")) {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-  }
-}
 .hero {
   @media (min-width: map-get($breakpoints , "medium")) {
     display: grid;
