@@ -9,7 +9,7 @@ html {
       url('../images/bg-pattern-bottom-desktop.svg');
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
-    background-size: 40%, 50%;
+    background-size: 40%, 70%;
   }
 }
 
@@ -65,6 +65,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
   height: 250px;
+  margin: 2rem 0;
 }
 
 .card--first {
