@@ -16,7 +16,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/dist/images/screenshot.png)
+![](./dist/assets/images/screenshot.jpg)
 
 
 
@@ -68,6 +67,8 @@ To see how you can add code snippets, see below:
 ### Continued development
 
 On the future project i will try to master using this 7-1 architecture, but for now Im gonna enhanced developing using grids. 
+
+The only problem with this solution is that it still uses the old module system of Sass which is - @import, this module system is being deprecated to be replaced by @use
 
 
 ## Author
